@@ -1,0 +1,241 @@
+#contaiter-apresentacao {
+    display: flex;
+    flex-direction: row;
+    
+   margin-block: 40px;
+}
+
+#contaiter-apresentacao h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 55px;
+    color: #000000;
+    margin-block: 20px;
+}
+
+#contaiter-apresentacao p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+
+    color: #575455;
+    margin-block: 20px;
+}
+
+.lado-esquerdo  {
+    width: 50%;
+}
+
+.lado-esquerdo img {
+    background-size: contain;
+    
+}
+.lado-direito {
+    text-align: end;
+    width: 50%;
+}
+
+.lado-direito a {
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 50px;
+    margin-block: 20px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    color: #FFFFFF;
+    background-color: #F75C4E;
+}
+
+#container-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 80px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 16px;
+    color: #070F18;
+}
+
+#container-links div {
+    width: 30%;
+}
+
+#container-links img {
+    width: 80px;
+    height: 27px;
+}
+
+#container-conhecimento {
+    display: flex;
+    align-items: end;
+}
+
+#container-conhecimento > div {
+    width: 50%;
+}
+
+#container-conhecimento h1 {
+   
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 36px;
+    color: #000000;
+}
+
+#container-conhecimento h2 {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 16px;
+    color: #F75C4E;
+}
+
+#container-conhecimento p {
+    margin-block: 10px 40px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    color: #575455;
+}
+
+#container-conhecimento button {
+    display: block;
+    padding: 10px 60px;
+    background: #1F7CFF;
+    border-radius: 40px;
+    border: none;
+    margin-block: 20px 40px;
+
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+#container-conhecimento input {
+    background-color: #F5F6FB;
+    border: none;
+    display: inline-block;
+    border-radius: 50px;
+    padding: 10px 30px;
+    width: 72%;
+    margin-block: 20px 0px;
+
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    color: #575455;
+}
+
+#container-portfolio {
+    margin-block: 100px;
+}
+
+#container-portfolio h1 {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 36px;
+    color: #000000;
+    margin-bottom: 60px;
+}
+#container-portfolio h2 {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 16px;
+    color: #F75C4E;
+}
+
+
+#container-portfolio div {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+    
+    #contaiter-apresentacao {
+        flex-direction: column;
+    }
+
+    #contaiter-apresentacao h1 {
+        font-size: 45px;
+    }
+    .lado-esquerdo,
+    .lado-direito {
+        width: 100%;
+        margin: auto;
+    }
+
+    #container-conhecimento {
+        flex-direction: column;
+    }
+    #container-conhecimento > div {
+        width: 100%;
+    }
+
+    #container-conhecimento > div:nth-child(1) {
+       margin-top: 40px;
+        order: 2;
+    }
+
+    #container-conhecimento br {
+        display: none;
+    }
+
+    #container-portfolio div {
+        gap: 50px;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    #container-portfolio div img {
+        width: 90%;
+        margin: auto;
+    }
+    #container-conhecimento input{
+        width: 100%;
+    }
+   
+
+}
+
+@media screen and (max-width: 768px) {
+    #container {
+        padding: 0 10px;
+    }
+    
+    #contaiter-apresentacao h1 {
+        font-size: 35px;
+    }
+
+    .lado-direito a {
+        margin-block: 10px;
+    }
+
+    #container-links {
+        margin-top: 0;
+        flex-direction: column;
+    }
+
+    #container-links div{
+        width: 90%;
+        br {
+            display: none;
+        }
+    }
+
+    #container-links a{
+        width: 90%;
+        margin-block: 30px;
+    }
+
+     
+}

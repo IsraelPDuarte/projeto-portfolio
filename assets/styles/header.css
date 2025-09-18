@@ -1,0 +1,56 @@
+
+/* header */
+#cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 40px;
+}
+
+#cabecalho h1{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    text-decoration-line: underline;
+    color: #070F18;
+
+
+}
+
+#cabecalho div {
+    display: flex;
+    gap: 20px;
+}
+
+#cabecalho a {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #070F18;
+
+}
+
+#cabecalho button {
+    display: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    #cabecalho div {
+        display: none;
+        flex-direction: column;
+    }
+
+    #cabecalho button {
+        display: block;
+    }
+}
+
